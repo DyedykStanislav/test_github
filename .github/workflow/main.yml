@@ -1,0 +1,17 @@
+name: Linters
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "**.py"
+  workflow_dispatch:
+
+
+jobs:
+  flake8:
+    name: flake8
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: DyedykStanislav/own_linter
