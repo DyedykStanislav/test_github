@@ -16,6 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import os
+error = os.path.dirname('dfgdsfg/dsf/gdfg/sdfgsdfgsd/fgsdfgsdfgs/dfgsd/fgsdfgsdfgsdf/gsdfgsdfgsdf/gsdfgsdfgsdfgsdfg/sdfgsdfg/sdfgsdfg/')
+import sys
+
+
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
