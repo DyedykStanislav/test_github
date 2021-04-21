@@ -13,5 +13,7 @@ jobs:
     name: flake8
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: DyedykStanislav/own_linter
+      - name: Python Pylin GitHub Action
+        uses: DyedykStanislav/write-docker-actions@v1
+        with:
+          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc <directory_name>
