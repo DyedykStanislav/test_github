@@ -10,4 +10,4 @@ jobs:
       - name: Python Pylin GitHub Action
         uses: DyedykStanislav/write-docker-actions@v1
         with:
-          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc <directory_name>
+          args: pip3 install -r requirements.txt && flake8 .
