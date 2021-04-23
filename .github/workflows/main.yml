@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-18.04
     name: Linting
     steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@v1
       - uses: DyedykStanislav/own_linter@main
