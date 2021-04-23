@@ -6,7 +6,15 @@ pull_request:
     paths:
       - "**.py"
 
-uses: jose-lpa/python-black-check-action@master
-with:
-  path: '.'
-  line-length: 80
+jobs:
+  flake8:
+    name: flake8
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout action
+        uses: actions/checkout@v2
+      - name: Django Coverage action
+        uses: jose-lpa/python-black-check-action@master
+        with:
+          path: '.'
+          line-length: 80
