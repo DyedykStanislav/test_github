@@ -14,4 +14,4 @@ jobs:
       - name: Checkout action
         uses: actions/checkout@v2
       - name: Django Coverage action
-        uses: DyedykStanislav/own_linter@v1
+        uses: DyedykStanislav/own_linter@main
