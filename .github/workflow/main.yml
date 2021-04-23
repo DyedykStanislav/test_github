@@ -14,7 +14,4 @@ jobs:
       - name: Checkout action
         uses: actions/checkout@v2
       - name: Django Coverage action
-        uses: DyedykStanislav/own_linter
-        with:
-          django-app: 'sample_app'
-          minimum-coverage: '86'
+        uses: DyedykStanislav/own_linter@v1
