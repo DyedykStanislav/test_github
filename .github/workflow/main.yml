@@ -1,20 +1,12 @@
-name: Linters
+name: Linting
 
-on:
-pull_request:
-    branches: [master]
-    paths:
-      - "**.py"
+on: [push]
 
 jobs:
-  flake8:
-    name: flake8
-    runs-on: ubuntu-latest
+  styles:
+    runs-on: ubuntu-18.04
+    name: Linting
     steps:
-      - name: Checkout action
-        uses: actions/checkout@v2
-      - name: Django Coverage action
-        uses: jose-lpa/python-black-check-action@master
-        with:
-          path: '.'
-          line-length: 80
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@v1
+      - uses: whynothugo/python-linting@master
