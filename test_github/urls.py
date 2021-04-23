@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-
+asd
 
 fufguyj = adsfadfa =asdfasdfa=sdf=dasd=fasdf=asfdasdfa =asasdf
 fufguyj = adsfadfa =asdfasdfa=sdf=dasd=fasdf=asfdasdfa =asasdf
