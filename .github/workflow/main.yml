@@ -1,14 +1,16 @@
 name: Linters
 
-on:
-  pull_request:
-    branches: [ master ]
-    paths:
-      - "**.py"
+on: [push]
+
 jobs:
   flake8:
     name: flake8
     runs-on: ubuntu-latest
     steps:
-      - name: Python Pylin GitHub Action
-        uses: DyedykStanislav/own_linter
+      - name: Checkout action
+        uses: actions/checkout@v2
+      - name: Django Coverage action
+        uses: actions/python-django-coverage-gitHub-action@0.9
+        with:
+          django-app: 'sample_app'
+          minimum-coverage: '86'
