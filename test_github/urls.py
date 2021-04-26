@@ -19,6 +19,7 @@ from django.urls import path
 import sys
 import os
 hl
+xczvz
 
 
 urlpatterns = [
