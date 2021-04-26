@@ -11,4 +11,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Linters
         uses: DyedykStanislav/own_linter@main
-
+        with:
+          flake8-options: "--ignore=F401"
