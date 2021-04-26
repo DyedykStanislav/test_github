@@ -7,4 +7,9 @@ jobs:
     runs-on: ubuntu-18.04
     name: Linting
     steps:
-      - uses: DyedykStanislav/own_linter@main
+      - name: Checkout action
+        uses: actions/checkout@v2
+      - name: Django Coverage action
+        uses: DyedykStanislav/own_linter@main
+        with:
+          flake8-options: "--ignore=F401"
