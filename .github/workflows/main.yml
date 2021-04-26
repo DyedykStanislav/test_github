@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout action
         uses: actions/checkout@v2
-      - name: Django Coverage action
+      - name: Linters
         uses: DyedykStanislav/own_linter@main
         with:
           flake8-options: "--ignore=F401"
