@@ -6,5 +6,8 @@ jobs:
   styles:
     runs-on: ubuntu-18.04
     name: Linting
+  - name: Checkout action
+    uses: actions/checkout@v2
+  - name: Django Coverage action
     steps:
       - uses: DyedykStanislav/own_linter@main
