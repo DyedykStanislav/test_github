@@ -19,6 +19,7 @@ from django.urls import path
 asdf = 'asdflkajsdhflkjashdflkjadshnflkjanbdkbfgnfkgbadsflkgjbdflkgjfgnfkgbadsflkgjbdflkgjfgnfkgbadsflkgjbdflkgjfgnfkgbadsflkgjbdflkgjn'
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
