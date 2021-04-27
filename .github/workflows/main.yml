@@ -9,10 +9,11 @@ jobs:
     steps:
       - name: Checkout action
         uses: actions/checkout@v2
-      - name: Python Pylin GitHub Action
-        uses: fylein/python-pylint-github-action@v1
+      - name: Django Coverage action
+        uses: actions/python-django-coverage-gitHub-action@0.9
         with:
-          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc <directory_name>
+          django-app: 'sample_app'
+          minimum-coverage: '86'
       - name: Django Coverage action
         uses: DyedykStanislav/own_linter@main
         with:
