@@ -9,12 +9,12 @@ jobs:
     steps:
       - name: Checkout action
         uses: actions/checkout@v2
+      - name: Python Pylin GitHub Action
+        uses: fylein/python-pylint-github-action@v1
+        with:
+          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc <directory_name>
       - name: Django Coverage action
         uses: DyedykStanislav/own_linter@main
         with:
           flake8-options: "--ignore=F401"
 
-      - name: Python Pylin GitHub Action
-        uses: fylein/python-pylint-github-action@v1
-        with:
-          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc <directory_name>
