@@ -55,7 +55,7 @@ ROOT_URLCONF = 'test_github.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'front'],
+        'DIRS': [BASE_DIR / 'front'], 'django.template.backends.django.DjangoTemplates','django.template.backends.django.DjangoTemplates','django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
