@@ -14,8 +14,3 @@ jobs:
         with:
           django-app: 'sample_app'
           minimum-coverage: '86'
-      - name: Django Coverage action
-        uses: DyedykStanislav/own_linter@main
-        with:
-          flake8-options: "--ignore=F401"
-
